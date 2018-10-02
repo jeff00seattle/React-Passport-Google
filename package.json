@@ -1,0 +1,32 @@
+{
+  "name": "React-Passport-Google",
+  "version": "0.1.0",
+  "description": "React-Passport-Google.",
+  "main": "",
+  "scripts": {
+    "backend": "npm start --prefix backend",
+    "backend-dev": "npm run watch --prefix backend",
+    "backend-install": "npm install --verbose --prefix backend",
+    "frontend": "npm start --prefix frontend",
+    "frontend-install": "npm install --verbose --prefix frontend",
+    "postinstall": "npm run frontend-install && npm run backend-install",
+    "start": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "start-dev": "concurrently \"npm run backend-dev\" \"npm run frontend\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.docusignhq.com:ACT/React-Passport-Google.git"
+  },
+  "author": "DocuSign, Inc.",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "concurrently": "^4.0.1",
+    "eslint": "^5.6.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.1",
+    "nodemon": "^1.18.4"
+  }
+}
